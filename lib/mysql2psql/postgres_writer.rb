@@ -58,7 +58,7 @@ class Mysql2psql
         'double precision'
 
       # Mysql datetime fields
-      when 'datetime'
+      when 'datetime', 'datetime(6)'
         default = nil
         'timestamp without time zone'
       when 'date'
